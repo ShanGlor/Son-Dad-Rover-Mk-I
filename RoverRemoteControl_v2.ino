@@ -5,7 +5,7 @@
 
 */
 
-#include <Streaming.h>  // The String library
+#include <Streaming.h>  // The Streaming library
 #include <AFMotor.h>    // AdaFruit H-Bridge library
 
 static   byte rcOld;                  // Prev. states of inputs
