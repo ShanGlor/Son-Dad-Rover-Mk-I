@@ -230,10 +230,17 @@ void actuateMotors() {
     Lspeed = 0;
     Rspeed = 0;
 
+    Ldirection = RELEASE;
+    Rdirection = RELEASE;
+
     motor1.setSpeed(Lspeed);     // LBM
     motor2.setSpeed(Rspeed);     // RBM
     motor3.setSpeed(Rspeed);     // RFM
     motor4.setSpeed(Lspeed);     // LFM
+    motor1.run(Ldirection);      // LBM Run
+    motor2.run(Rdirection);      // RBM Run
+    motor3.run(Rdirection);      // RFM Run
+    motor4.run(Ldirection);      // LFM Run
   }
 
   //Serial << "Moving..." << "X: " << X << "\tY: " << Y << "\t\tLspeed:" << Lspeed << "\tRspeed:" << Rspeed << "\tLirection:" << Ldirection << "\tRdirection:" << Rdirection << endl;
